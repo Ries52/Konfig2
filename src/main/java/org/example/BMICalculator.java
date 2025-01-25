@@ -87,7 +87,7 @@ import java.util.Scanner;
                 case 0 -> "Normalgewicht";
                 case 1 -> "Übergewicht";
                 case 2 -> "Sehr starkes Übergewicht";
-                default -> "Unbekannt";
+                default -> "Something goes wrong";
             };
         }
 
