@@ -6,7 +6,6 @@ public class BMICalculator {
     private int bodyHeight; // in cm
     private double bodyWeight; // in kg
     private char gender; // 'm' for male, 'w' for female
-
     // Constructor
     public BMICalculator(String firstname, String lastname, int bodyHeight, double bodyWeight, char gender) {
         this.firstname = firstname;
