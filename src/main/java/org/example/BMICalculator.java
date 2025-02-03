@@ -1,12 +1,14 @@
 package org.example;
 
+
+
 public class BMICalculator {
-    private String firstname;
-    private String lastname;
+    private final String firstname ;
+    private final String lastname;
     private int bodyHeight; // in cm
     private double bodyWeight; // in kg
-    private char gender; // 'm' for male, 'w' for female
-// Testjjjdjdj
+    private final char gender; // 'm' for male, 'w' for female
+
     // Constructor
     public BMICalculator(String firstname, String lastname, int bodyHeight, double bodyWeight, char gender) {
         this.firstname = firstname;
@@ -88,5 +90,12 @@ public class BMICalculator {
     // Helper method to round to 2 decimal places
     private double round(double value) {
         return Math.round(value * 100.0) / 100.0;
+    }
+
+    public static void main(String[] args) {
+        BMICalculator calculator = new BMICalculator("Nichts","nichts",100,45,'m');
+        calculator.setBodyHeight(170);  // Aufruf der Methode
+        calculator.setBodyWeight(70.5);  // Aufruf der Methode
+
     }
 }
