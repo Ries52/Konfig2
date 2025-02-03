@@ -7,6 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Willkommen beim BMI-Rechner!");
+
         System.out.print("Bitte geben Sie Ihren Vornamen ein: ");
         String firstname = scanner.nextLine();
 
