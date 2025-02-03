@@ -53,6 +53,7 @@
 //            String result2 = calculator.getBMICategoryName(2);
 //            Assertions.assertEquals("Übergewicht", result);
 //            Assertions.assertEquals("Sehr starkes Übergewicht", result2);
+
 //
 //        }
 //
