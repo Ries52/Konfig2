@@ -46,6 +46,7 @@ public class BMICalculator {
         this.bodyWeight = bodyWeight;
     }
 
+
     // Calculate BMI
     public double calculateBMI() {
         double heightInMeters = bodyHeight / 100.0;
