@@ -5,21 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     # Here are the steps to be executed by the machine running this job
     steps:
-        # Checkout the GitHub repository with the code
-      
-name: Checkout Repository
-      uses: actions/checkout@v2
+      # Checkout the GitHub repository with the code
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-        # Setup Java
-      
-name: Setup JDK
-      uses: actions/setup-java@v2
-      with:
-        distribution: 'adopt'
-        java-version: 17
-        check-latest: true
+      # Setup Java
+      - name: Setup JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: 17
+          check-latest: true
 
-        # Run our tests. Whether they pass/fail will be reflected on the workflow status badge.
-      
-name: Build and test with Maven
-      run: mvn -B package
+      # Run our tests. Whether they pass/fail will be reflected on the workflow status badge.
+      - name: Build and test with Maven
+        run: mvn -B package
